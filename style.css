@@ -1,0 +1,57 @@
+/*index.html*/
+
+.fondoInicio{
+    background-image: url(assets/img/muro.jpg);
+    background-size: cover;
+}
+
+.headerInicio{
+    height: 150px;
+    background-image: url(assets/img/graffiti1-removebg-preview.png);
+    background-size: 100% 170%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tituloPagina{
+    font-family: Honk;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.marqueeInicio{
+    background-image: url(assets/img/Texturelabs_Grunge_264XL.jpg);
+    border-style:dashed;
+    border-width: 5pxpx;
+    font-family: 'BBH Bartle', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navBar{
+    width: 200px;
+}
+
+.navItem{
+    width: 100%;
+}
+
+.cuerpo{
+    width: 70%;
+    height: 1000px;
+}
+
+/*news.html*/
+
+.fondoNews{
+    background-image: url(assets/img/cielo.jpg);
+    background-size: cover;
+}
