@@ -1,45 +1,65 @@
 /*General*/
 
-main{
+main {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.navCol{
+.navCol {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 200px;
 }
 
-.navColItem{
+.navColItem {
     width: 100%;
 }
 
-.navBar{
+.navBar {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     width: 100%;
     height: 100px;
 }
-.navBarItem{
+
+.navBarItem {
     height: 100%;
 }
 
-.cuerpo{
+.cuerpo {
     width: 70%;
-    height: 1000px;
+    height: auto;
+}
+
+@font-face {
+    font-family: "billo";
+    src: url(assets/fonts/BILLO___.TTF);
+}
+
+@font-face {
+    font-family: "magazine-letter";
+    src: url(assets/fonts/MagazineLetterByBrntlbrnl-Regular.ttf);
+}
+
+@font-face {
+    font-family: "magazine-letter";
+    src: url(assets/fonts/MagazineLetterByBrntlbrnl-Regular.ttf);
 }
 
 /*index.html*/
 
-.fondoInicio{
+.fondoInicio {
     background-image: url(assets/img/muro.jpg);
     background-size: cover;
 }
 
-.headerInicio{
+.headerInicio {
     height: 150px;
     background-image: url(assets/img/graffiti1-removebg-preview.png);
     background-size: 100% 170%;
@@ -47,7 +67,7 @@ main{
     background-repeat: no-repeat;
 }
 
-.tituloPagina{
+.tituloPagina {
     font-family: Honk;
     font-size: 50px;
     text-align: center;
@@ -56,9 +76,9 @@ main{
     padding-top: 40px;
 }
 
-.marqueeInicio{
+.marqueeInicio {
     background-image: url(assets/img/Texturelabs_Grunge_264XL.jpg);
-    border-style:dashed;
+    border-style: dashed;
     border-width: 3px;
     font-family: 'BBH Bartle', sans-serif;
     color: rgb(255, 255, 255);
@@ -67,17 +87,14 @@ main{
 
 /*news.html*/
 
-@font-face {
-    font-family: "billo";
-    src: url(assets/fonts/BILLO___.TTF);
-}
 
-.fondoNews{
+
+.fondoNews {
     background-image: url(assets/img/cielo.jpg);
     background-size: cover;
 }
 
-.tituloNews{
+.tituloNews {
     font-family: "billo";
     font-size: 90px;
     text-align: center;
@@ -86,7 +103,7 @@ main{
     padding-top: 40px;
 }
 
-.noticia{
+.noticia {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
@@ -98,20 +115,36 @@ main{
     border-radius: 20px;
 }
 
-.noticiaContenido{
+.noticiaContenido {
     width: 80%;
 }
 
-.noticiaImg{
+.noticiaImg {
     width: 20%;
 }
 
-.imgNoticia{
+.imgNoticia {
     width: 100%;
 }
 
-.footerNews{
+.footerNews {
     background-image: url(assets/img/ola.gif);
     background-size: contain;
     height: 100px;
+}
+
+/*gallery.html*/
+
+.fondoGallery{
+    background-image: url(assets/img/grassy.JPG);
+}
+
+.tituloGallery{
+    font-family: "magazine-letter";
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
 }
