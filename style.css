@@ -160,15 +160,12 @@ main {
 }
 
 .spacerGallery1{
-    width: 100px;
-    height: 200px;
+    width: 50px;
+    height: 20px;
 }
 
-#pillado{
-    background-image: url(assets/img/gallery/pillado.JPG);
-    background-size: cover;
-    background-position: -1500;
-    width: 200px;
+.spacerGallery2{
+    width: 50px;
     height: 200px;
 }
 
@@ -177,6 +174,22 @@ main {
     background-size: cover;
     background-position: 00;
     width: 400px;
+    height: 200px;
+}
+
+#pillado{
+    background-image: url(assets/img/gallery/pillado.JPG);
+    background-size: cover;
+    background-position:right;
+    width: 250px;
+    height: 200px;
+}
+
+#perroCosta{
+    background-image: url(assets/img/gallery/perroCosta.JPG);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
     height: 200px;
 }
 
