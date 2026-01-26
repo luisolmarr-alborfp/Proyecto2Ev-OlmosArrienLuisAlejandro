@@ -48,8 +48,8 @@ main {
 }
 
 @font-face {
-    font-family: "magazine-letter";
-    src: url(assets/fonts/MagazineLetterByBrntlbrnl-Regular.ttf);
+    font-family: "shaka-pow";
+    src: url(assets/fonts/Shaka\ Pow\ Hollow.ttf);
 }
 
 /*index.html*/
@@ -206,4 +206,44 @@ main {
     background-position: 00;
     width: 300px;
     height: 200px;
+}
+
+
+/*cats.html*/
+
+.fondoCats{
+    background-image: url(assets/img/gato\ ponderoso.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tituloCats{
+    font-family: "shaka-pow";
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.marqueeCats {
+    background-image: url(assets/img/rainbow-yeye.gif);
+    border-style: dashed;
+    border-width: 3px;
+    font-family: 'BBH Bartle', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+.tablaCats{
+    width: 100%;
+}
+
+.celdaCats{
+    width: 20%;
+}
+
+.imgGato {
+    width: 100%;
 }
