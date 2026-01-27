@@ -48,8 +48,8 @@ main {
 }
 
 @font-face {
-    font-family: "shaka-pow";
-    src: url(assets/fonts/Shaka\ Pow\ Hollow.ttf);
+    font-family: "neon-rave";
+    src: url(assets/fonts/Neon\ Rave\ Italic.ttf);
 }
 
 /*index.html*/
@@ -74,6 +74,7 @@ main {
     width: 100%;
     margin: auto;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .marqueeInicio {
@@ -101,6 +102,7 @@ main {
     width: 100%;
     margin: auto;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .noticia {
@@ -149,16 +151,12 @@ main {
     width: 100%;
     margin: auto;
     padding-top: 40px;
-}
-
-.tablaGallery{
-    border-style: dashed;
-    border-width: 2px;
+    padding-bottom: 40px;
 }
 
 .fotos{
     border-style: inset;
-    border-color: maroon;
+    border-color: rgb(31, 9, 9);
 }
 
 .spacerGallery1{
@@ -218,6 +216,31 @@ main {
 #otisEsfinge{
     background-image: url(assets/img/gallery/otisEsfinge.JPG);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#montMatre{
+    background-image: url(assets/img/gallery/montMatre.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#metro{
+    background-image: url(assets/img/gallery/metro.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#payasitos{
+    background-image: url(assets/img/gallery/payasitos.JPG);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 300px;
 }
@@ -232,13 +255,14 @@ main {
 }
 
 .tituloCats{
-    font-family: "shaka-pow";
+    font-family: "neon-rave";
     font-size: 90px;
-    color: rgb(0, 0, 0);
+    color: #000000;
     text-align: center;
     width: 100%;
     margin: auto;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .marqueeCats {
