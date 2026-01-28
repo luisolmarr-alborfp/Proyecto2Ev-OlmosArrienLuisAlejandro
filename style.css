@@ -48,6 +48,8 @@ main {
     height: auto;
 }
 
+/*Fonts*/
+
 @font-face {
     font-family: "billo";
     src: url(assets/fonts/BILLO___.TTF);
@@ -61,6 +63,11 @@ main {
 @font-face {
     font-family: "neon-rave";
     src: url(assets/fonts/Neon\ Rave\ Italic.ttf);
+}
+
+@font-face {
+    font-family: "iceland";
+    src: url(assets/fonts/Iceland-Regular.ttf);
 }
 
 /*index.html*/
@@ -97,6 +104,12 @@ main {
     font-size: x-large;
 }
 
+.navColItemTag{
+    font-family: Honk;
+    font-size: 30px;
+    margin-top: -15px;
+}
+
 /*news.html*/
 
 
@@ -116,12 +129,49 @@ main {
     padding-bottom: 40px;
 }
 
+.newsCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
+    margin-top: 100px;
+    background-color: #00000050;
+    border-radius: 50px;
+    border-style: dotted;
+    position: sticky;
+    top: 30px;
+}
+
+.newsColItem {
+    font-family: "iceland";
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.newsColItem:hover {
+    scale: 1.1;
+}
+
+.subtituloNews{
+    font-family: "billo";
+    font-size: 60px;
+    margin: auto;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
 .noticia {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 80%;
     padding: 10px;
-    background-image: linear-gradient(to right, rgba(0, 255, 0, 0), rgba(0, 255, 191, 0.425));
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 255, 191, 0.425));
     border-top: dotted white 5px;
     border-bottom: dotted white 5px;
     border-right: dotted white 5px;
@@ -130,14 +180,35 @@ main {
 
 .noticiaContenido {
     width: 80%;
+    font-family: "iceland";
+    font-size: 20px;
+}
+
+h3{
+    font-style: italic;
+    color: rgb(88, 88, 88);
+    margin-top: -20px;
+}
+
+.noticiaCuerpo {
+    margin-left: 5%;
+    width: 80%;
+    text-align: justify;
 }
 
 .noticiaImg {
     width: 20%;
+    margin-right: 5%;
 }
 
 .imgNoticia {
     width: 100%;
+    border-style: solid;
+    border-color: black;
+}
+
+.imgNoticia:hover {
+    scale: 1.1;
 }
 
 .footerNews {
