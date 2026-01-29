@@ -23,7 +23,7 @@ main {
     width: 90%;
 }
 
-.navColItem:hover{
+.navColItem:hover {
     width: 100%;
 }
 
@@ -45,6 +45,9 @@ main {
 
 .cuerpo {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: auto;
 }
 
@@ -115,13 +118,13 @@ main {
     font-size: x-large;
 }
 
-.navColItemTag{
+.navColItemTag {
     font-family: Honk;
     font-size: 30px;
     margin-top: -15px;
 }
 
-.bienvenidoInicio{
+.bienvenidoInicio {
     font-family: "fighting-spirit";
     font-size: 40px;
     letter-spacing: 10px;
@@ -134,29 +137,64 @@ main {
 }
 
 @keyframes bienvenidoAnimacion {
-    0% { color: white; text-shadow: black 3px 3px 2px; }
-    50% { color: yellow; text-shadow: red 5px 5px 4px; }
-    100% { color: white; text-shadow: black 3px 3px 2px; }
+    0% {
+        color: white;
+        text-shadow: black 3px 3px 2px;
+    }
+
+    50% {
+        color: yellow;
+        text-shadow: red 5px 5px 4px;
+    }
+
+    100% {
+        color: white;
+        text-shadow: black 3px 3px 2px;
+    }
 }
 
-.descItemsTable{
-    width: 100%;
+.descItemChart {
     margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
-.descItemRow{
-    height: 200px;
+.descItemCell {
+    display: flex;
+    align-items: center;
+    grid-column: 1 / span 2;
 }
 
-.descItemCell{
-    width: 50%;
+.descItemCellR {
+    display: flex;
+    align-items: center;
+    grid-column: 2 / 4;
+    flex-direction: row-reverse;
 }
 
-#descInicio{
-    background-image: url(assets/img/domo-removebg-preview.png);
-    background-color: chartreuse;
-    background-size: 40%;
-    background-repeat: no-repeat;
+.descItemImg {
+    width: 30%;
+    border-radius: 100%;
+    box-shadow: blueviolet 5px 5px 10px, rgb(176, 247, 250) -5px 0px 10px inset;
+}
+
+.descItemImgx {
+    width: 30%;
+}
+
+.descItemDesc {
+    font-family: "inked-god";
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.descItemDescR {
+    font-family: "inked-god";
+    font-size: 25px;
+    text-align: right;
+    margin-left: 20px;
 }
 
 
@@ -206,7 +244,7 @@ main {
     scale: 1.1;
 }
 
-.subtituloNews{
+.subtituloNews {
     font-family: "billo";
     font-size: 60px;
     margin: auto;
@@ -234,7 +272,7 @@ main {
     font-size: 20px;
 }
 
-h3{
+h3 {
     font-style: italic;
     color: rgb(88, 88, 88);
     margin-top: -20px;
@@ -269,13 +307,13 @@ h3{
 
 /*gallery.html*/
 
-.fondoGallery{
+.fondoGallery {
     background-image: url(assets/img/grassy.JPG);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.tituloGallery{
+.tituloGallery {
     font-family: "magazine-letter";
     font-size: 90px;
     color: rgb(0, 0, 0);
@@ -286,22 +324,22 @@ h3{
     padding-bottom: 40px;
 }
 
-.fotos{
+.fotos {
     border-style: inset;
     border-color: rgb(31, 9, 9);
 }
 
-.spacerGallery1{
+.spacerGallery1 {
     width: 50px;
     height: 20px;
 }
 
-.spacerGallery2{
+.spacerGallery2 {
     width: 50px;
     height: 200px;
 }
 
-#playa{
+#playa {
     background-image: url(assets/img/gallery/playa.JPG);
     background-size: cover;
     background-position: 00;
@@ -309,15 +347,15 @@ h3{
     height: 200px;
 }
 
-#pillado{
+#pillado {
     background-image: url(assets/img/gallery/pillado.JPG);
     background-size: cover;
-    background-position:right;
+    background-position: right;
     width: 250px;
     height: 200px;
 }
 
-#perroCosta{
+#perroCosta {
     background-image: url(assets/img/gallery/perroCosta.JPG);
     background-size: cover;
     background-position: center;
@@ -325,14 +363,14 @@ h3{
     height: 200px;
 }
 
-#tornilloPerlas{
+#tornilloPerlas {
     background-image: url(assets/img/gallery/tornilloPerlas.JPG);
     background-size: cover;
     background-position: 00;
     height: 200px;
 }
 
-#gato{
+#gato {
     background-image: url(assets/img/gallery/gato.JPG);
     background-size: cover;
     background-position: 00;
@@ -340,12 +378,12 @@ h3{
     height: 200px;
 }
 
-#blurry{
+#blurry {
     background-image: url(assets/img/gallery/blurry.JPG);
     background-size: cover;
 }
 
-#otisEsfinge{
+#otisEsfinge {
     background-image: url(assets/img/gallery/otisEsfinge.JPG);
     background-size: cover;
     background-position: center;
@@ -353,7 +391,7 @@ h3{
     height: 300px;
 }
 
-#montMatre{
+#montMatre {
     background-image: url(assets/img/gallery/montMatre.JPG);
     background-size: cover;
     background-position: center;
@@ -361,7 +399,7 @@ h3{
     height: 300px;
 }
 
-#metro{
+#metro {
     background-image: url(assets/img/gallery/metro.JPG);
     background-size: cover;
     background-position: center;
@@ -369,7 +407,7 @@ h3{
     height: 300px;
 }
 
-#payasitos{
+#payasitos {
     background-image: url(assets/img/gallery/payasitos.JPG);
     background-size: cover;
     background-position: center;
@@ -380,13 +418,13 @@ h3{
 
 /*cats.html*/
 
-.fondoCats{
+.fondoCats {
     background-image: url(assets/img/gato\ ponderoso.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.tituloCats{
+.tituloCats {
     font-family: "neon-rave";
     font-size: 90px;
     color: #000000;
@@ -402,17 +440,52 @@ h3{
 }
 
 @keyframes tituloCatsAnimacion {
-    0% { transform: scale(1); color: royalblue; }
-    10% { color: darkorchid; }
-    20% { color: rgb(21, 199, 30); }
-    30% { color: rgb(50, 204, 201); }
-    40% { color: orange; }
-    50% { transform: scale(1.1); color: yellow; }
-    60% { color: rgb(255, 0, 0); }
-    70% { color: rgb(255, 0, 140); }
-    80% { color: rgb(91, 255, 97); }
-    90% { color: rgb(173, 92, 170); }
-    100% { transform: scale(1); color: royalblue; }
+    0% {
+        transform: scale(1);
+        color: royalblue;
+    }
+
+    10% {
+        color: darkorchid;
+    }
+
+    20% {
+        color: rgb(21, 199, 30);
+    }
+
+    30% {
+        color: rgb(50, 204, 201);
+    }
+
+    40% {
+        color: orange;
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: yellow;
+    }
+
+    60% {
+        color: rgb(255, 0, 0);
+    }
+
+    70% {
+        color: rgb(255, 0, 140);
+    }
+
+    80% {
+        color: rgb(91, 255, 97);
+    }
+
+    90% {
+        color: rgb(173, 92, 170);
+    }
+
+    100% {
+        transform: scale(1);
+        color: royalblue;
+    }
 }
 
 .marqueeCats {
@@ -424,11 +497,11 @@ h3{
     font-size: x-large;
 }
 
-.tablaCats{
+.tablaCats {
     width: 100%;
 }
 
-.celdaCats{
+.celdaCats {
     width: 20%;
 }
 
@@ -436,26 +509,42 @@ h3{
     width: 100%;
 }
 
-.upnd{
+.upnd {
     animation-name: upndAnimacion;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 @keyframes upndAnimacion {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
-.lnr{
+.lnr {
     animation-name: lnrAnimacion;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 @keyframes lnrAnimacion {
-    0% { transform: translateX(0px); }
-    50% { transform: translateX(20px); }
-    100% { transform: translateX(0px); }
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
