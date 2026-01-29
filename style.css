@@ -70,6 +70,17 @@ main {
     src: url(assets/fonts/Iceland-Regular.ttf);
 }
 
+@font-face {
+    font-family: "inked-god";
+    src: url(assets/fonts/iNked\ God.ttf);
+}
+
+@font-face {
+    font-family: "fighting-spirit";
+    src: url(assets/fonts/Fighting\ Spirit\ 2\ bold.otf);
+}
+
+
 /*index.html*/
 
 .fondoInicio {
@@ -109,6 +120,45 @@ main {
     font-size: 30px;
     margin-top: -15px;
 }
+
+.bienvenidoInicio{
+    font-family: "fighting-spirit";
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: black 3px 3px 2px;
+    text-align: center;
+    animation-name: bienvenidoAnimacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bienvenidoAnimacion {
+    0% { color: white; text-shadow: black 3px 3px 2px; }
+    50% { color: yellow; text-shadow: red 5px 5px 4px; }
+    100% { color: white; text-shadow: black 3px 3px 2px; }
+}
+
+.descItemsTable{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.descItemRow{
+    height: 200px;
+}
+
+.descItemCell{
+    width: 50%;
+}
+
+#descInicio{
+    background-image: url(assets/img/domo-removebg-preview.png);
+    background-color: chartreuse;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
 
 /*news.html*/
 
