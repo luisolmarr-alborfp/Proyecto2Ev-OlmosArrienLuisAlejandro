@@ -74,11 +74,6 @@ main {
 }
 
 @font-face {
-    font-family: "inked-god";
-    src: url(assets/fonts/iNked\ God.ttf);
-}
-
-@font-face {
     font-family: "fighting-spirit";
     src: url(assets/fonts/Fighting\ Spirit\ 2\ bold.otf);
 }
@@ -162,22 +157,26 @@ main {
 }
 
 .descItemCell {
+    background-color: rgba(240, 248, 255, 0.192);
+    border-radius: 40px;
     display: flex;
     align-items: center;
     grid-column: 1 / span 2;
+    box-shadow: blueviolet 5px 5px 10px, rgb(176, 247, 250) -5px 0px 10px inset;
 }
 
 .descItemCellR {
+    background-color: rgba(240, 248, 255, 0.192);
+    border-radius: 40px;
     display: flex;
     align-items: center;
     grid-column: 2 / 4;
     flex-direction: row-reverse;
+    box-shadow: blueviolet 5px 5px 10px, rgb(176, 247, 250) -5px 0px 10px inset;
 }
 
 .descItemImg {
     width: 30%;
-    border-radius: 100%;
-    box-shadow: blueviolet 5px 5px 10px, rgb(176, 247, 250) -5px 0px 10px inset;
 }
 
 .descItemImgx {
@@ -185,14 +184,14 @@ main {
 }
 
 .descItemDesc {
-    font-family: "inked-god";
-    font-size: 25px;
+    font-family: "iceland";
+    font-size: 30px;
     margin-left: 20px;
 }
 
 .descItemDescR {
-    font-family: "inked-god";
-    font-size: 25px;
+    font-family: "iceland";
+    font-size: 30px;
     text-align: right;
     margin-left: 20px;
 }
